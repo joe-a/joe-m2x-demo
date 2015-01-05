@@ -22,10 +22,10 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWIS
 ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
 OF SUCH DAMAGE.
 */
-	var wsUri = "ws://agile01.sealabs.org:8080/ws/m2x";  // We're using Node-Red's websockets node type in this case. Change as needed.
+	var wsUri = "ws://api-flow.att.io/sandbox/m2xsmartphone/joeanderson/in/flow/ws/m2x";  // We're using Node-Red's websockets node type in this case. Change as needed.
 	var connectionStatus; 
 	var connected = false;
-	var nametag = "Kevin was here!";
+	var nametag = "Joe Was Here!";
 	var latitude = 0;
 	var longitude = 0;
 	var altitude = 0;
@@ -483,7 +483,7 @@ function openM2XModal() {
 }
 function goToM2X() {
 	$('#M2XModal').modal('hide');
-	window.open('https://m2x.att.com/feed/46e330aa2218faf9cdc1e5186f94918f', '_blank');
+	window.open('https://m2x.att.com/feed/c584aca8e135a9ddc401917a4c2ff7e5', '_blank');
 }
 function closeHelpModal() {
 	$('#helpModal').modal('hide');
